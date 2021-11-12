@@ -13,9 +13,12 @@ public class XMLService implements ActionService{
     private Entity xmlEntity;
     private XMLRepository xmlMemDB;
 
-    public XMLService() {
-        xmlEntity = new XMLEntity();
-        xmlMemDB = new XMLMemDB();
+    public void setXmlMemDB(XMLRepository xmlMemDB) {
+        this.xmlMemDB = xmlMemDB;
+    }
+
+    public void setXmlEntity(Entity xmlEntity) {
+        this.xmlEntity = xmlEntity;
     }
 
     public void writeXMLFile(CSVDTO dtoFile) {

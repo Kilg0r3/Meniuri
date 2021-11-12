@@ -7,8 +7,8 @@ import org.andrei.menus.mem_db.api.CSVRepository;
 public class CSVService implements ActionService {
     private CSVRepository csvMemDB;
 
-    public CSVService() {
-        csvMemDB = new CSVMemDB();
+    public void setCsvMemDB(CSVRepository csvMemDB) {
+        this.csvMemDB = csvMemDB;
     }
 
     public void loadCSVFile() {

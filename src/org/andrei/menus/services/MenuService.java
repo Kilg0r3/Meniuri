@@ -9,9 +9,12 @@ public class MenuService implements ActionService{
     private MenuRepository menuDB;
     private CommandReaderService commReader;
 
-    public MenuService() {
-        menuDB = new MenuMemDB();
-        commReader = new CommandReaderService();
+    public void setMenuDB(MenuRepository menuDB) {
+        this.menuDB = menuDB;
+    }
+
+    public void setCommReader(CommandReaderService commReader) {
+        this.commReader = commReader;
     }
 
     public void chooseOption() {
