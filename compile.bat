@@ -1,0 +1,1 @@
+javac Meniuri\Menu.java Meniuri\MainMenu.java Meniuri\MenuOne.java Meniuri\MenuTwo.java Meniuri\Controller.java App.java
