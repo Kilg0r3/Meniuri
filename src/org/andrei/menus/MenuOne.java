@@ -1,7 +1,5 @@
 package org.andrei.menus;
 
-import org.andrei.menus.services.ActionService;
-
 public class MenuOne extends Menu {
 
     private StringBuilder menuBuilder;
@@ -15,8 +13,6 @@ public class MenuOne extends Menu {
                 .append("=========\n")
                 .append("0. Main Menu\n")
                 .append("2. Menu two\n");
-        System.out.println(menuBuilder.toString());
-        ActionService actionService = getActionService();
-        actionService.action();
+        System.out.println(menuBuilder);
     }
 }

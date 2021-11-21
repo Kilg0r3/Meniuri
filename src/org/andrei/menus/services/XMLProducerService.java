@@ -16,6 +16,8 @@ public class XMLProducerService {
         menuService = new MenuService();
         menuService.setMenuDB(new MenuMemDB());
         menuService.setCommReader(new CommandReaderService());
+
+
     }
 
     public void produceXML() {
